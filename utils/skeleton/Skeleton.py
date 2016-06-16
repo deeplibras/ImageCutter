@@ -33,8 +33,8 @@ class Skeleton(object):
     """
     def __init__(self, coordsStringLine):
         # The frame name and his respective coords
-        frame = None
-        coords = []
+        self.frame = None
+        self.coords = []
     
         # Split the line between frame and coords
         coordsStringLine = re.split(" \[", coordsStringLine)
