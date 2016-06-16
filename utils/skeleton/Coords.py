@@ -5,10 +5,6 @@ by: Rodrigo Briet
 """
 class Coords(object):
     
-    X = None
-    Y = None
-    Z = None
-    
     def __init__(self, x, y, z):
         self.X = x
         self.Y = y
