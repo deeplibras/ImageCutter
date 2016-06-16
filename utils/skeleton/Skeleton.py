@@ -27,15 +27,15 @@ class Skeleton(object):
     HIP_RIGHT      = 10
     FOOT_LEFT      = 11
     FOOT_RIGHT     = 12
-
-    # The frame name and his respective coords
-    frame = None
-    coords = []
     
     """
     Split the frame name from de coords, then save the frame and populate the coords list
     """
     def __init__(self, coordsStringLine):
+        # The frame name and his respective coords
+        frame = None
+        coords = []
+    
         # Split the line between frame and coords
         coordsStringLine = re.split(" \[", coordsStringLine)
 
